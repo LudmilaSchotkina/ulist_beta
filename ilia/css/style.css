@@ -1,0 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+	background: url('../img/fullback.jpg') top center no-repeat fixed;
+	background-size: cover;
+}
