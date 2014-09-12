@@ -1,0 +1,38 @@
+[
+	{
+		"id": 1,
+		"title": "How I chose this university",
+		"text": "Text of first post..",
+		"comments": 3,
+		"likes":1,
+		"date": "2014-06-18T15:00:02",
+		"categories": "About university"
+	},
+	{
+		"id": 2,
+		"title": "I love my university",
+		"text": "Text of second post..",
+		"comments": 6,
+		"likes":101,
+		"date": "2014-07-16T15:00:02",
+		"categories": "Timetable"
+	},
+	{
+		"id": 3,
+		"title": "My first day",
+		"text": "Text of third post...",
+		"comments": 10,
+		"likes":10,
+		"date": "2014-01-10T10:11:02",
+		"categories": "Sports section"
+	},
+	{
+		"id": 4,
+		"title": "How I chose this university",
+		"text": "Text of first post..",
+		"comments": 2,
+		"likes":4,
+		"date": "2014-06-18T15:00:02",
+		"categories": "About university"
+	}
+] 

@@ -1,0 +1,64 @@
+<!--
+<div>
+	<h1>Posts main page</h1>
+
+	<div class="posts">
+		<span>Sort by </span>
+		<a href="" ng-click="sortby('text')">Name</a>
+		<a href="" ng-click="sortby('date')">Date</a>
+		<a href="" ng-click="sortby('likes')">Popularity</a>
+	
+		<div class="content" ng-repeat="content in posts | orderBy:sortField:reverse">
+			<h3>{{content.title}}</h3>
+			<p>{{content.text}}</p>
+			<footer>
+				<span>Likes: {{content.likes}}</span>
+				<span>Comments: {{content.comments}}</span>
+				<span>{{content.date}}</span>
+			</footer>
+		</div>
+	</div>
+	<div class="categories">
+		<h3>Categories</h3>
+		<p class="categories-content" ng-repeat="topics in posts">
+			<a ng-href="#/posts/{{topics.id}}">{{topics.categories}}</a>
+		</p>
+		<a href="/index.html">More...</a>
+	</div>
+</div>
+-->
+<div></div>
+<table class="posts" border="0">
+<tr>
+<td>ячейка 1, первый ряд</td>
+<td>
+	<div >
+		<span>Sort by </span>
+		<a href="" class="sort-field" ng-click="sortby('title')">Name</a>
+		<a href="" class="sort-field" ng-click="sortby('date')">Date</a>
+		<a href="" class="sort-field" ng-click="sortby('likes')">Popularity</a>
+	
+		<div class="content" ng-repeat="content in posts | orderBy:sortField:reverse">
+			<h3><a ng-href="{{postPath(content.id)}}">{{content.title}}</a></h3>
+			<p>{{content.text}}</p>
+			<footer>
+				<span>Likes: {{content.likes}}</span>
+				<span>Comments: {{content.comments}}</span>
+				<span>{{content.date}}</span>
+			</footer>
+		</div>
+	</div>
+</td>
+<td>
+	<div class="categories">
+		<h3>Categories</h3>
+		<p class="categories-content" ng-repeat="topics in posts">
+			<a ng-href="#/posts/{{topics.id}}">{{topics.categories}}</a>
+		</p>
+		<a href="/index.html">More...</a>
+	</div>
+</td>
+</tr>
+<tr>
+</table>
+</div>
